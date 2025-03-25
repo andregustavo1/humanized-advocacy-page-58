@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +39,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -95,7 +92,75 @@
     @apply border-border;
   }
 
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-neutral text-neutral-dark font-montserrat;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-16 md:py-24 px-6 md:px-10 max-w-7xl mx-auto overflow-hidden;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-playfair font-normal mb-6 md:mb-10 text-primary relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-16 h-0.5 bg-secondary mt-2;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded transition-all duration-300 font-medium;
+  }
+  
+  .btn-primary {
+    @apply btn bg-cta text-white hover:bg-cta-hover shadow-button hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-transparent border border-secondary text-secondary hover:bg-secondary hover:text-white;
+  }
+  
+  .card-shadow {
+    @apply shadow-card hover:shadow-lg transition-shadow duration-300;
+  }
+  
+  .timeline-connector {
+    @apply absolute h-0.5 bg-accent top-1/4 left-0 transform -translate-y-1/2 w-0;
+  }
+
+  .nav-link {
+    @apply relative text-white hover:text-accent transition-colors duration-300 px-4 py-2;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute left-0 bottom-0 w-0 h-0.5 bg-accent transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  
+  .scrolled-header {
+    @apply bg-white text-primary shadow-md;
+  }
+
+  .scrolled-header .nav-link {
+    @apply text-primary hover:text-secondary;
+  }
+
+  .scrolled-header .nav-link::after {
+    @apply bg-secondary;
   }
 }
