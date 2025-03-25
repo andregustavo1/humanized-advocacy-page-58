@@ -83,9 +83,9 @@ const Process: React.FC = () => {
             <ScrollReveal 
               key={index} 
               delay={200 + (index * 150)}
-              className="flex-1 px-4"
+              className="flex-1 px-4 md:min-w-[150px] flex flex-col"
             >
-              <div className="bg-white rounded-lg border border-accent p-6 mb-6 card-shadow">
+              <div className="bg-white rounded-lg border border-accent p-6 mb-6 card-shadow h-full flex-1 flex flex-col">
                 <div className="mb-4 p-3 rounded-full bg-accent/30 inline-flex items-center justify-center">
                   {step.icon}
                 </div>

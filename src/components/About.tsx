@@ -45,7 +45,7 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {differentials.map((item, index) => (
             <ScrollReveal key={index} delay={200 + (index * 100)}>
-              <div className="p-6 bg-white rounded-md card-shadow">
+              <div className="p-6 bg-white rounded-md card-shadow h-full flex flex-col">
                 <div className="mb-4">{item.icon}</div>
                 <h3 className="text-lg font-medium mb-2 text-primary">{item.title}</h3>
                 <p className="text-sm text-neutral-dark/70">{item.description}</p>
