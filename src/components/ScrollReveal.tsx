@@ -27,6 +27,7 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setTimeout(() => {
+              currentRef.classList.add('opacity-100');
               currentRef.classList.add(`animate-${animation}`);
             }, delay);
             observer.unobserve(currentRef);
@@ -49,7 +50,7 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
   return (
     <div 
       ref={ref} 
-      className={`opacity-0 ${className}`}
+      className={`transition-all duration-700 opacity-0 ${className}`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}

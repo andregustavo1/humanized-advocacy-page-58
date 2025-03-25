@@ -120,8 +120,14 @@ export default {
 					}
 				},
 				'progress-fill': {
-					'0%': { width: '0%' },
-					'100%': { width: '100%' }
+					'0%': { width: '0%', height: '0%' },
+					'100%': { width: '100%', height: '100%' }
+				},
+				'ping': {
+					'75%, 100%': {
+						transform: 'scale(2)',
+						opacity: '0'
+					}
 				},
 			},
 			animation: {
@@ -131,6 +137,7 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out forwards',
 				'scale-in': 'scale-in 0.6s ease-out forwards',
 				'progress-fill': 'progress-fill 3s ease-out forwards',
+				'ping': 'ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite',
 			},
 			backgroundImage: {
 				'hero-pattern': "linear-gradient(rgba(45, 51, 70, 0.7), rgba(45, 51, 70, 0.7)), url('/hero-bg.jpg')",

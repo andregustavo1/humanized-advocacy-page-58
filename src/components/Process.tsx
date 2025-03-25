@@ -70,7 +70,12 @@ const Process: React.FC = () => {
       <div className="relative mt-20 pb-10">
         <div 
           ref={timelineRef}
-          className="timeline-connector"
+          className="absolute top-[25px] left-[calc(50%-2px)] w-1 h-0 bg-secondary transform -translate-x-1/2 md:top-[20px] md:left-0 md:w-0 md:h-1"
+          style={{ 
+            transition: 'width 2s ease-out, height 2s ease-out',
+            width: '0%',
+            height: '0%' 
+          }}
         ></div>
         
         <div className="flex flex-col md:flex-row justify-between items-start relative z-10">
