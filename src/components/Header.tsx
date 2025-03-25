@@ -41,9 +41,6 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <h1 className={`text-xl md:text-2xl font-playfair font-medium transition-colors duration-300 ${scrolled ? 'text-primary' : 'text-accent'}`}>
             Vagner Vieira
-            <span className={`block text-xs md:text-sm font-montserrat font-light ${scrolled ? 'text-secondary' : 'text-white'}`}>
-              Advocacia e Assessoria Jurídica
-            </span>
           </h1>
         </div>
         
@@ -84,7 +81,7 @@ const Header: React.FC = () => {
           onClick={() => scrollToSection('contact')}
           className="btn-primary text-sm"
         >
-          Agendar Consulta
+          Contate-nos
         </button>
       </div>
     </header>

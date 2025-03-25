@@ -2,6 +2,7 @@
 import React from 'react';
 import { MapPin, Mail, Phone, Facebook, Instagram, Youtube } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
+import { Button } from './ui/button';
 
 const Contact: React.FC = () => {
   return (
@@ -14,27 +15,27 @@ const Contact: React.FC = () => {
       </ScrollReveal>
       
       <div className="max-w-3xl mx-auto">
-        <div className="bg-white rounded-lg p-8 card-shadow">
+        <div className="bg-white rounded-lg p-6 md:p-8 card-shadow">
           <div className="grid md:grid-cols-2 gap-8">
             <ScrollReveal delay={200}>
               <div>
                 <div className="flex items-start mb-6">
-                  <MapPin className="w-6 h-6 text-secondary mr-4 mt-1" />
+                  <MapPin className="w-6 h-6 text-secondary mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-medium text-primary mb-1">Endereço</h3>
-                    <p className="text-neutral-dark/80">Rua Rui Barbosa, 1.214, Centro, Rio Verde/GO, CEP 75901-250</p>
+                    <p className="text-neutral-dark/80 text-sm md:text-base">Rua Rui Barbosa, 1.214, Centro, Rio Verde/GO, CEP 75901-250</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start mb-6">
-                  <Phone className="w-6 h-6 text-secondary mr-4 mt-1" />
+                  <Phone className="w-6 h-6 text-secondary mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-medium text-primary mb-1">WhatsApp</h3>
                     <a 
                       href="https://wa.me/5564984190392" 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="text-secondary hover:underline"
+                      className="text-secondary hover:underline text-sm md:text-base"
                     >
                       (64) 98419-0392
                     </a>
@@ -42,12 +43,12 @@ const Contact: React.FC = () => {
                 </div>
                 
                 <div className="flex items-start mb-6">
-                  <Mail className="w-6 h-6 text-secondary mr-4 mt-1" />
+                  <Mail className="w-6 h-6 text-secondary mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-medium text-primary mb-1">E-mail</h3>
                     <a 
                       href="mailto:vagnervieira.adv@gmail.com" 
-                      className="text-secondary hover:underline"
+                      className="text-secondary hover:underline text-sm md:text-base break-words"
                     >
                       vagnervieira.adv@gmail.com
                     </a>
@@ -59,7 +60,7 @@ const Contact: React.FC = () => {
             <ScrollReveal delay={400}>
               <div>
                 <h3 className="font-medium text-primary mb-4">Redes Sociais</h3>
-                <div className="flex space-x-4 mb-8">
+                <div className="flex space-x-4 mb-6">
                   <a 
                     href="https://www.facebook.com/share/157HUJkbHK/" 
                     target="_blank" 
