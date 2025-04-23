@@ -36,6 +36,16 @@ const About: React.FC = () => {
           </ScrollReveal>
           
           <ScrollReveal delay={200}>
+            <div className="mb-6 overflow-hidden rounded-lg shadow-md">
+              <img 
+                src="/lovable-uploads/67720ee5-f1ea-4e3f-926a-f8d58be9f342.png" 
+                alt="Vagner Vieira" 
+                className="w-full object-cover transition-transform hover:scale-105 duration-500"
+              />
+            </div>
+          </ScrollReveal>
+          
+          <ScrollReveal delay={300}>
             <p className="text-lg mb-6 text-neutral-dark/80 leading-relaxed">
               Advogado especializado em direito de família e sucessões, atuando com foco em soluções preventivas e conflitos familiares. Combinamos expertise técnica com abordagem humanizada, garantindo segurança jurídica e tranquilidade para nossos clientes em Rio Verde e região.
             </p>
