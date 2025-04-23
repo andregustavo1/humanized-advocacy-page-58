@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { PersonStanding, Shield, Clock, Briefcase } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
@@ -38,7 +37,7 @@ const About: React.FC = () => {
           <ScrollReveal delay={200}>
             <div className="mb-6 overflow-hidden rounded-lg shadow-md">
               <img 
-                src="/lovable-uploads/7dd58c43-3df7-44ca-8a2c-259ad2ace5f4.png" 
+                src="/lovable-uploads/66782799-1c27-4f2d-ba49-1c20f59bbb22.png" 
                 alt="Vagner Vieira" 
                 className="w-full h-[350px] object-cover transition-transform hover:scale-105 duration-500"
               />
