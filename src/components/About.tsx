@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { PersonStanding, Shield, Clock, Briefcase } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
@@ -40,7 +39,7 @@ const About: React.FC = () => {
               <img 
                 src="/lovable-uploads/66782799-1c27-4f2d-ba49-1c20f59bbb22.png" 
                 alt="Vagner Vieira" 
-                className="w-full h-[350px] object-cover object-top transition-transform hover:scale-105 duration-500"
+                className="w-full h-[650px] object-cover object-top transition-transform hover:scale-105 duration-500"
               />
             </div>
           </ScrollReveal>
